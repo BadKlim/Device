@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="main-header">
         <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="Device" width="164" height="36"></a>
@@ -43,33 +45,102 @@
     </header>
 
     <main class="container">
-        <section class="catalog-title">
+        
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Католог товаров</a></li>
-            <li><a class="current-link">Моноподы для селфи</a></li>
+            <li class="breadcrumbs-current">Моноподы для селфи</li>
         </ul>
-        </section>
+
         <section class="filter">
-            <div class="filter-head">
-                <h2 class="filter-title">Фильтр:</h2>
-                <div class="filter-sorting">
-                    <h2 class="filter-title">Сортировка:</h2>
-                    <div class="filter-sorting-type">
-                        <a class="filter-sorting-type-current">По цене</a>
-                        <a href="#">По типу</a>
-                        <a href="#">По популярности</a>
-                    </div>
-                    <div class="filter-sorting-direction">
-                        <a class="btn-up-direction" href="#">up</a>
-                        <a class="btn-down-direction current-direction">down</a>
-                    </div>
-                </div>
-            </div>
+            <div class="filter-title">Фильтр:</div>
+            <!-- ЗДЕСЬ БУДЕТ ФОРМА С ФИЛЬТРОМ -->
         </section>
         
+        <section class="sorting">
+            <div class="sorting-title">Сортировка:</div>
+            <ul class="sorting-type">
+                <li><a class="sorting-type-active">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+            </ul>
+            <ul class="sorting-direction">
+                <li><a class="btn-up-direction" href="#">up</a></li>
+                <li><a class="btn-down-direction sorting-direction-active">down</a></li>
+            </ul>
+        </section>
         
+        <section class="catalog">
+            <ul class="catalog-items">
+                <li class="catalog-item">
+                    <h2 class="catalog-item-title"><a href="#">Любительская селфи-палка</a></h2>
+                    <span class="catalog-item-price">500 руб.</span>
+                    <p>
+                        <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    </p>
+                    <div class="catalog-item-flag">New</div>
+                    <div class="catalog-item-hover">
+                        <button type="submit">В корзину</button>
+                        <button type="submit">Добавить к сравнению</button>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <h2 class="catalog-item-title"><a href="#">Профессиональная селфи-палка</a></h2>
+                    <span class="catalog-item-price">1500 руб.</span>
+                    <p>
+                        <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                    </p>
+                    <div class="catalog-item-flag">New</div>
+                    <div class="catalog-item-hover">
+                        <button type="submit">В корзину</button>
+                        <button type="submit">Добавить к сравнению</button>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <h2 class="catalog-item-title"><a href="#">Непотопляемая селфи-палка</a></h2>
+                    <span class="catalog-item-price">2500 руб.</span>
+                    <p>
+                        <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                    </p>
+                    <div class="catalog-item-flag">New</div>
+                    <div class="catalog-item-hover">
+                        <button type="submit">В корзину</button>
+                        <button type="submit">Добавить к сравнению</button>
+                    </div>
+                </li>
+                <li class="catalog-item">
+
+                    <h2 class="catalog-item-title"><a href="#">Селфи-палка «Следуй за мной»</a></h2>
+                    <span class="catalog-item-price">500 руб.</span>
+                    <p>
+                        <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                    </p>
+                    <div class="catalog-item-flag">New</div>
+                    <div class="catalog-item-hover">
+                        <button type="submit">В корзину</button>
+                        <button type="submit">Добавить к сравнению</button>
+                    </div>
+                </li>
+            </ul>
+            <ul class="catalog-pagination">
+                <li class="pagination-btn-prev">
+                    <a href="#">Назад</a>
+                </li>
+                <li class="pagination-btn-page">
+                    <a class="pagination-item-current" href="#">1</a>
+                </li>
+                <li class="pagination-btn-page">
+                    <a href="#">2</a>
+                </li>
+                <li class="pagination-btn-page">
+                    <a href="#">3</a>
+                </li>
+                <li class="pagination-btn-prev">
+                    <a href="#">Вперед</a>
+                </li>
+            </ul>
+        </section>
         
     </main>
 
@@ -99,4 +170,5 @@
     <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
+
 </html>

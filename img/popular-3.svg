@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="71px" height="87px" viewBox="0 0 71 87" enable-background="new 0 0 71 87" xml:space="preserve">
-<g>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="71px" height="87px" viewBox="0 0 71 87" enable-background="new 0 0 71 87" xml:space="preserve">
 	<path fill="#363636" d="M53.349,1.49c0-0.736-0.578-1.49-1.311-1.49H9.053C8.32,0,7.672,0.754,7.672,1.49v3.522h45.676V1.49z"/>
 	<path fill="#363636" d="M54.202,81.809h-9.597V71.426h-6.958v2.507H18.774c-0.537-1.254-1.757-2.148-3.181-2.148H3.559
 		C1.642,71.784,0,73.387,0,75.311v3.018c0,1.924,1.642,3.48,3.559,3.48h12.035c1.511,0,2.792-0.896,3.269-2.326h18.785v2.326H28.13
@@ -23,5 +18,4 @@
 	<ellipse fill="#363636" cx="56.415" cy="45.476" rx="1.43" ry="1.436"/>
 	<circle fill="#363636" cx="55.697" cy="17.565" r="1.435"/>
 	<circle fill="#363636" cx="39.828" cy="45.906" r="1.435"/>
-</g>
 </svg>
