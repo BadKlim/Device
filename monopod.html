@@ -12,9 +12,9 @@
     <header class="main-header">
         <a class="logo" href="index.html"><img src="img/logo.svg" alt="Device" width="164" height="36"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search-form">Поиск</label>
+            <label for="search-form" class="search-label">Поиск</label>
             <input type="search" name="search" placeholder="Поиск по сайту" id="search-form">
-            <button type="submit">Найти</button>
+            <button type="submit" class="search-btn">Найти</button>
         </form>
         <ul class="user-block">
             <li class="login"><a href="#">Валентин Петухов</a></li>
@@ -24,23 +24,23 @@
         </ul>
         <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="#">Каталог товаров</a>
-                    <ul>
-                        <li><a href="#">Виртуальная реальность</a></li>
-                        <li><a href="#">Моноподы для селфи</a></li>
-                        <li><a href="#">Экшн-камеры</a></li>
+                <li class="menu-item"><a href="monopod.html">Каталог товаров</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="monopod.html">Виртуальная реальность</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Моноподы для селфи</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Экшн-камеры</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Фитнес-браслеты</a></li>
-                        <li><a href="#">Умные часы</a></li>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="monopod.html">Фитнес-браслеты</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Умные часы</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Квадрокоптеры</a></li>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="monopod.html">Квадрокоптеры</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Доставка</a></li>
+                <li class="menu-item"><a href="#">Гарантия</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -204,7 +204,7 @@
 
     <footer class="main-footer">
         <div class="main-footer-top">
-            <a class="logo"><img src="img/logo.svg" alt="Device" width="164" height="36"></a>
+            <a class="logo" href="index.html"><img src="img/logo-footer.svg" alt="Device" width="164" height="36"></a>
             <ul class="user-block">
                 <li class="login">
                     <a href="#">Валентин Петухов</a>
@@ -230,12 +230,12 @@
             <p>Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="main-footer-bottom">
-            <ul class="social-buttons">
+            <ul>
                 <li><a class="social-facebook" href="#">Facebook</a></li>
                 <li><a class="social-instagram" href="#">Instagram</a></li>
                 <li><a class="social-twitter" href="#">Twitter</a></li>
             </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Разработано в HTML Academy</a>
         </div>
     </footer>
 

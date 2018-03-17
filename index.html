@@ -12,9 +12,9 @@
     <header class="main-header">
         <a class="logo"><img src="img/logo.svg" alt="Device" width="164" height="36"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search-form">Поиск</label>
+            <label for="search-form" class="search-label">Поиск</label>
             <input type="search" name="search" placeholder="Поиск по сайту" id="search-form">
-            <button type="submit">Найти</button>
+            <button type="submit" class="search-btn">Найти</button>
         </form>
         <ul class="user-block">
             <li class="login"><a href="#">Войти</a></li>
@@ -23,41 +23,43 @@
         </ul>
         <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="monopod.html">Каталог товаров</a>
-                    <ul>
-                        <li><a href="monopod.html">Виртуальная реальность</a></li>
-                        <li><a href="monopod.html">Моноподы для селфи</a></li>
-                        <li><a href="monopod.html">Экшн-камеры</a></li>
+                <li class="menu-item"><a href="monopod.html">Каталог товаров</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="monopod.html">Виртуальная реальность</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Моноподы для селфи</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Экшн-камеры</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="monopod.html">Фитнес-браслеты</a></li>
-                        <li><a href="monopod.html">Умные часы</a></li>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="monopod.html">Фитнес-браслеты</a></li>
+                        <li class="submenu-item"><a href="monopod.html">Умные часы</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="monopod.html">Квадрокоптеры</a></li>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="monopod.html">Квадрокоптеры</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="menu-item"><a href="#">Доставка</a></li>
+                <li class="menu-item"><a href="#">Гарантия</a></li>
+                <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <h1 class="visually-hidden">Магазин техники «Device»</h1>
-
         <section class="slider-top">
             <h2 class="visually-hidden">Лучшие товары</h2>
+            <input id="slide-first" type="radio" name="slide" value="first" class="slide-radio-hidden" checked>
+            <input id="slide-second" type="radio" name="slide" value="second" class="slide-radio-hidden">
+            <input id="slide-third" type="radio" name="slide" value="third" class="slide-radio-hidden">
             <ul class="slides-switches">
                 <li class="slide-radio">
-                    <button class="slide-btn">Слайд селфипалок</button>
+                    <label class="slide-btn slide-btn-active" for="slide-first">Слайд селфипалок</label>
                 </li>
                 <li class="slide-radio">
-                    <button class="slide-btn">Слайд фитнес-браслетов</button>
+                    <label class="slide-btn" for="slide-second">Слайд фитнес-браслетов</label>
                 </li>
                 <li class="slide-radio">
-                    <button class="slide-btn">Слайд квадрокоптеров</button>
+                    <label class="slide-btn" for="slide-third">Слайд квадрокоптеров</label>
                 </li>
             </ul>
             <ol class="slides">
@@ -126,54 +128,67 @@
             <ul class="popular-list">
                 <li class="popular-item">
                     <a href="#">
-                        <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
+                        <div class="popular-img">
+                            <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
+                        </div>
                         <h3>Виртуальная реальность</h3>
                     </a>
                 </li>
                 <li class="popular-item">
                     <a href="#">
-                        <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
+                        <div class="popular-img img-monopod">
+                            <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
+                        </div>
                         <h3>Моноподы для селфи</h3>
                     </a>
                 </li>
                 <li class="popular-item">
                     <a href="#">
-                        <img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
+                        <div class="popular-img">
+                            <img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
+                        </div>
                         <h3>Экшн-камеры</h3>
                     </a>
                 </li>
                 <li class="popular-item">
                     <a href="#">
-                        <img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65">
+                        <div class="popular-img">
+                            <img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65">
+                        </div>
                         <h3>Фитнес-браслеты</h3>
                     </a>
                 </li>
                 <li class="popular-item">
                     <a href="#">
-                        <img src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
+                        <div class="popular-img">
+                            <img src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
+                        </div>
                         <h3>Умные часы</h3>
                     </a>
                 </li>
                 <li class="popular-item">
                     <a href="#">
-                        <img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
+                        <div class="popular-img">
+                            <img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
+                        </div>
                         <h3>Квадрокоптеры</h3>
                     </a>
                 </li>
             </ul>
         </section>
-
+        
+        <div class="index-columns">
         <section class="services">
             <h2 class="visually-hidden">Сервисы</h2>
             <ul class="services-switches">
                 <li class="services-radio">
-                    <button class="services-btn">Доставка</button>
+                    <button class="btn btn-services-active">Доставка</button>
                 </li>
                 <li class="services-radio">
-                    <button class="services-btn">Гарантия</button>
+                    <button class="btn">Гарантия</button>
                 </li>
                 <li class="services-radio">
-                    <button class="services-btn">Кредит</button>
+                    <button class="btn">Кредит</button>
                 </li>
             </ul>
             <ul class="services-slides">
@@ -191,6 +206,7 @@
                 </li>
             </ul>
         </section>
+        </div>
 
         <section class="partners">
             <h2 class="visually-hidden">Наши партнёры</h2>
@@ -240,7 +256,7 @@
 
     <footer class="main-footer">
         <div class="main-footer-top">
-            <a class="logo"><img src="img/logo.svg" alt="Device" width="164" height="36"></a>
+            <a class="logo"><img src="img/logo-footer.svg" alt="Device" width="164" height="36"></a>
             <ul class="user-block">
                 <li class="login">
                     <a href="#">Войти</a>
@@ -263,12 +279,12 @@
             <p>Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="main-footer-bottom">
-            <ul class="social-buttons">
+            <ul>
                 <li><a class="social-facebook" href="#">Facebook</a></li>
                 <li><a class="social-instagram" href="#">Instagram</a></li>
                 <li><a class="social-twitter" href="#">Twitter</a></li>
             </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Разработано в HTML Academy</a>
         </div>
     </footer>
 
