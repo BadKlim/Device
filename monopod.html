@@ -18,7 +18,7 @@
         </form>
         <ul class="user-block">
             <li class="login"><a href="#">Валентин Петухов</a></li>
-            <li class="exit"><a href="#">Выйти</a></li>
+            <li class="exit"><a href="#" class="active">Выйти</a></li>
             <li class="compare"><a href="#">Сравнить</a></li>
             <li class="cart"><a href="#">Корзина</a></li>
         </ul>
@@ -54,10 +54,10 @@
         </ul>
 
         <section class="filters">
-            <h2 class="filter-title">Фильтр:</h2>
+            <h2>Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend>Стоимость</legend>
+                <fieldset class="filter-price">
+                    <legend class="filter-title">Стоимость</legend>
                     <div class="range-controls">
                         <span class="toggle toggle-min"></span>
                         <span class="toggle toggle-max"></span>
@@ -67,8 +67,8 @@
                         <span>до 5000</span>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Цвет</legend>
+                <fieldset class="filter-color">
+                    <legend class="filter-title">Цвет</legend>
                     <ul>
                         <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
@@ -92,8 +92,8 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Bluetooth</legend>
+                <fieldset class="filter-bluetooth">
+                    <legend class="filter-title">Bluetooth</legend>
                     <ul>
                         <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
@@ -105,17 +105,17 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="filter-button button">Показать</button>
+                <button type="submit" class="btn">Показать</button>
             </form>
         </section>
 
         <section class="sorting">
-            <h2 class="sorting-title">Сортировка:</h2>
+            <h2>Сортировка:</h2>
             <ul class="sorting-type">
-                <li><a class="sorting-type-active">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По популярности</a></li>
-                <li><a class="btn-up-direction" href="#">Вверх</a></li>
+                <li><a class="sorting-type-current">По цене</a></li>
+                <li><a class="sorting-type-inactive" href="#">По типу</a></li>
+                <li><a class="sorting-type-inactive" href="#">По популярности</a></li>
+                <li><a class="sorting-type-inactive btn-up-direction" href="#">Вверх</a></li>
                 <li><a class="btn-down-direction current">Вниз</a></li>
             </ul>
         </section>
@@ -133,8 +133,8 @@
                     </p>
                     <div class="catalog-item-flag">New</div>
                     <div class="catalog-item-hover">
-                        <a href="#">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a class="btn" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
                     </div>
                 </li>
                 <li class="catalog-item">
@@ -147,8 +147,8 @@
                     </p>
                     <div class="catalog-item-flag">New</div>
                     <div class="catalog-item-hover">
-                        <a href="#">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a class="btn" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
                     </div>
                 </li>
                 <li class="catalog-item">
@@ -161,8 +161,8 @@
                     </p>
                     <div class="catalog-item-flag">New</div>
                     <div class="catalog-item-hover">
-                        <a href="#">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a class="btn" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
                     </div>
                 </li>
                 <li class="catalog-item">
@@ -175,27 +175,27 @@
                     </p>
                     <div class="catalog-item-flag">New</div>
                     <div class="catalog-item-hover">
-                        <a href="#">В корзину</a>
-                        <a href="#">Добавить к сравнению</a>
+                        <a class="btn" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
                     </div>
                 </li>
             </ul>
 
             <ul class="pagination-list">
                 <li class="pagination-item">
-                    <a href="#">Назад</a>
-                </li>
-                <li class="pagination-item pagination-item-current">
-                    <a>1</a>
+                    <a class="step" href="#">Назад</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#">2</a>
+                    <a class="page-current" >1</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#">3</a>
+                    <a class="page-inactive" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#">Вперед</a>
+                    <a class="page-inactive" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="step" href="#">Вперед</a>
                 </li>
             </ul>
         </section>
