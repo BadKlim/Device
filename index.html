@@ -12,9 +12,9 @@
     <header class="main-header">
         <a class="logo"><img src="img/logo.svg" alt="Device" width="164" height="36"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search-form" class="search-label">Поиск</label>
-            <input type="search" name="search" placeholder="Поиск по сайту" id="search-form">
-            <button type="submit" class="search-btn">Найти</button>
+            <label class="search-label" for="search-form">Поиск</label>
+            <input class="search-form-hidden" type="search" name="search" placeholder="Поиск по сайту" id="search-form">
+            <button class="search-form-hidden search-btn" type="submit">Найти</button>
         </form>
         <ul class="user-block">
             <li class="login"><a href="#">Войти</a></li>
@@ -48,9 +48,9 @@
         <h1 class="visually-hidden">Магазин техники «Device»</h1>
         <section class="slider-top">
             <h2 class="visually-hidden">Лучшие товары</h2>
-            <input id="slide-first" type="radio" name="slide" value="first" class="slide-radio-hidden" checked>
-            <input id="slide-second" type="radio" name="slide" value="second" class="slide-radio-hidden">
-            <input id="slide-third" type="radio" name="slide" value="third" class="slide-radio-hidden">
+            <input class="slide-radio-hidden" id="slide-first" type="radio" name="slide" value="first" checked>
+            <input class="slide-radio-hidden" id="slide-second" type="radio" name="slide" value="second">
+            <input class="slide-radio-hidden" id="slide-third" type="radio" name="slide" value="third">
             <ul class="slides-switches">
                 <li class="slide-radio">
                     <label class="slide-btn slide-btn-active" for="slide-first">Слайд селфипалок</label>
