@@ -19,26 +19,28 @@
                     <button class="search-form-hidden search-btn" type="submit">Найти</button>
                 </form>
                 <ul class="user-block">
-                    <li class="login"><a href="#">Войти</a></li>
-                    <li class="compare"><a href="#">Сравнить</a></li>
-                    <li class="cart"><a href="#">Корзина</a></li>
+                    <li class="left-side"><a class="login" href="#">Войти</a></li>
+                    <li><a class="compare" href="#">Сравнить</a></li>
+                    <li><a class="cart" href="#">Корзина</a></li>
                 </ul>
             </div>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li class="menu-item"><a href="monopod.html">Каталог товаров</a>
-                        <ul class="submenu">
-                            <li class="submenu-item"><a href="monopod.html">Виртуальная реальность</a></li>
-                            <li class="submenu-item"><a href="monopod.html">Моноподы для селфи</a></li>
-                            <li class="submenu-item"><a href="monopod.html">Экшн-камеры</a></li>
-                        </ul>
-                        <ul class="submenu">
-                            <li class="submenu-item"><a href="monopod.html">Фитнес-браслеты</a></li>
-                            <li class="submenu-item"><a href="monopod.html">Умные часы</a></li>
-                        </ul>
-                        <ul class="submenu">
-                            <li class="submenu-item"><a href="monopod.html">Квадрокоптеры</a></li>
-                        </ul>
+                    <li class="menu-item"><a class="index-catalog" href="monopod.html">Каталог товаров</a>
+                        <div class="submenu">
+                            <ul>
+                                <li class="submenu-item"><a href="monopod.html">Виртуальная реальность</a></li>
+                                <li class="submenu-item"><a href="monopod.html">Моноподы для селфи</a></li>
+                                <li class="submenu-item"><a href="monopod.html">Экшн-камеры</a></li>
+                            </ul>
+                            <ul>
+                                <li class="submenu-item"><a href="monopod.html">Фитнес-браслеты</a></li>
+                                <li class="submenu-item"><a href="monopod.html">Умные часы</a></li>
+                            </ul>
+                            <ul>
+                                <li class="submenu-item"><a href="monopod.html">Квадрокоптеры</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu-item"><a href="#">Доставка</a></li>
                     <li class="menu-item"><a href="#">Гарантия</a></li>
@@ -55,7 +57,7 @@
             <section class="slider-top">
                 <h2 class="visually-hidden">Лучшие товары</h2>
                 <ol class="slides">
-                    <li class="slide-content slide-first">
+                    <li class="slide-content slide-visible">
                         <div class="slide-content-img">
                             <img src="img/slider-1.png" alt="Самая длинная палка для сэлфи" width="384" height="486">
                         </div>
@@ -64,7 +66,7 @@
                             <p class="slide-promo">Делай селфи, <br>как Бен Стиллер!</p>
                             <p class="slide-promo-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                             <a class="btn" href="#">Подробнее</a>
-                            <table>
+                            <table class="custom-table-1">
                                 <tr>
                                     <th>8,5 м</th>
                                     <th>5 кг</th>
@@ -78,7 +80,7 @@
                             </table>
                         </div>
                     </li>
-                    <li class="slide-content slide-second">
+                    <li class="slide-content slide-hidden">
                         <div class="slide-content-img">
                             <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
                         </div>
@@ -97,7 +99,7 @@
                             </table>
                         </div>
                     </li>
-                    <li class="slide-content slide-third">
+                    <li class="slide-content slide-hidden">
                         <div class="slide-content-img">
                             <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
                         </div>
@@ -192,26 +194,26 @@
                 <section class="services">
                     <h2 class="visually-hidden">Сервисы</h2>
                     <ul class="services-switches">
-                        <li class="services-radio services-switches-active">
+                        <li class="services-switches-active">
                             <button class="btn btn-services btn-services-active">Доставка</button>
                         </li>
-                        <li class="services-radio">
+                        <li>
                             <button class="btn btn-services">Гарантия</button>
                         </li>
-                        <li class="services-radio">
+                        <li>
                             <button class="btn btn-services">Кредит</button>
                         </li>
                     </ul>
                     <ul class="services-slides">
-                        <li class="slide-content services-slide-first">
+                        <li class="slide-content delivery services-slide-visible">
                             <h3>Доставка</h3>
                             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                         </li>
-                        <li class="slide-content services-slide-second">
+                        <li class="slide-content warranty services-slide-hidden">
                             <h3>Гарантия</h3>
                             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                         </li>
-                        <li class="slide-content services-slide-third">
+                        <li class="slide-content credit services-slide-hidden">
                             <h3>Кредит</h3>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                         </li>
