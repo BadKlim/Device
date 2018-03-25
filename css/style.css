@@ -155,7 +155,6 @@ input[type="radio"].visually-hidden {
 
 .search-form {
     position: relative;
-    width: 440px;
     padding: 0;
     margin: 0;
 }
@@ -230,21 +229,27 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.user-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 500px;
+.main-header .user-block {
+    padding-top: 10px;
+}
+
+.user-block li {
+    display: inline-block;
+    margin-right: 30px
+}
+
+.user-block li:last-child {
+    display: inline-block;
+    margin-right: 0;
 }
 
 .user-block .left-side {
-    width: 280px;
+    margin-right: 206px;
 }
 
 .user-block a {
     position: relative;
     padding-left: 26px;
-    margin-left: 32px;
 }
 
 .user-block .login {
@@ -864,10 +869,6 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
-}
-
-.main-footer-top .user-block {
-    width: 324px;
 }
 
 .main-footer .user-block a {
