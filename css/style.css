@@ -715,7 +715,9 @@ input[type="radio"].visually-hidden {
     max-width: 460px;
 }
 
-.delivery, .credit, .warranty {
+.delivery,
+.credit,
+.warranty {
     background-repeat: no-repeat;
     background-position: right center;
     right: 50px;
@@ -732,6 +734,7 @@ input[type="radio"].visually-hidden {
 .warranty {
     background-image: url(../img/warranty.svg);
 }
+
 .partners {
     margin-bottom: 84px;
 }
@@ -970,6 +973,112 @@ input[type="radio"].visually-hidden {
     fill: #7e6d31;
 }
 
+.modal {
+    box-sizing: border-box;
+    position: fixed;
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    background-color: #f0c52e;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 13px;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-map {
+    top: 120px;
+    left: 50%;
+    width: 960px;
+    height: 559px;
+    margin-left: -480px;
+}
+
+.modal-map p {
+    margin: 0;
+}
+
+.modal-wtite-us {
+    top: 120px;
+    left: 50%;
+    margin-left: -480px;
+    width: 960px;
+    padding: 95px 100px;
+    padding-bottom: 85px;
+}
+
+.modal-wtite-us .modal-wtite-us-label {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
+
+.modal-wtite-us .name,
+.modal-wtite-us .email {
+    display: inline-block;
+    width: 360px;
+}
+
+.modal-wtite-us .name {
+    margin-right: 35px;
+}
+
+.modal-wtite-us .letter {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.name input,
+.email input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    width: 360px;
+}
+
+.name input,
+.email input,
+.letter textarea {
+    margin-top: 13px;
+}
+
+.letter textarea {
+    width: 740px;
+    height: 124px;
+    padding: 16px 20px;
+    resize: vertical;
+}
+
 .modal-wtite-us input,
 .modal-wtite-us textarea {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -992,6 +1101,10 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
     color: #464646;
     outline: 3px solid #f7e296;
+}
+
+.modal-wtite-us .btn {
+    padding: 10px 35px;
 }
 
 .modal-wtite-us .error {
@@ -1160,8 +1273,4 @@ input[type="radio"].visually-hidden {
 
 .pagination-list .step:active {
     color: #acacac;
-}
-
-.modal {
-    display: none;
 }
