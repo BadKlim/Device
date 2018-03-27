@@ -1446,10 +1446,10 @@ input[type='radio'].visually-hidden {
 
 .btn-up-direction::before {
   position: absolute;
-  top: -9px;
+  bottom: 50%;
   left: -13px;
-  width: 17px;
-  height: 9px;
+  width: 11px;
+  height: 10px;
   content: '';
   background-image: url(../img/icon-up-dir.svg);
   background-repeat: no-repeat;
@@ -1457,10 +1457,10 @@ input[type='radio'].visually-hidden {
 
 .btn-down-direction::before {
   position: absolute;
-  top: -10px;
+  bottom: 50%;
   left: -13px;
-  width: 17px;
-  height: 9px;
+  width: 11px;
+  height: 10px;
   content: '';
   background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
@@ -1600,7 +1600,7 @@ input[type='radio'].visually-hidden {
   color: rgba(0, 0, 0, .2);
   border: 2px solid rgba(0, 0, 0, .1);
   border-radius: 50%;
-  ;
+  cursor: default;
 }
 
 .pagination-list {
