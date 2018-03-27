@@ -1200,6 +1200,11 @@ input[type='radio'].visually-hidden {
 .catalog-inner-left-side-content {
   width: 268px;
   margin-left: auto;
+  padding-left: 64px;
+}
+
+.filters {
+  position: relative;
 }
 
 .filters .filters-top {
@@ -1208,14 +1213,9 @@ input[type='radio'].visually-hidden {
   align-items: baseline;
 }
 
-.filters {
-  position: relative;
-}
-
 .filters .filters-bottom {
   display: flex;
   padding-top: 69px;
-  justify-content: flex-end;
 }
 
 .filter .filter-title {
@@ -1403,6 +1403,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding-left: 75px;
 }
 
 .catalog-inner-right-side:before {
