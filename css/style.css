@@ -383,8 +383,7 @@ input[type='radio'].visually-hidden {
   width: 1160px;
   min-height: 164px;
   margin: 0;
-  padding: 0 60px;
-  padding-top: 20px;
+  padding: 20px 60px;
   list-style: none;
   letter-spacing: .01em;
   text-transform: none;
@@ -439,7 +438,6 @@ input[type='radio'].visually-hidden {
 
 .slider-top {
   position: relative;
-  max-height: 480px;
 }
 
 .slider-top .slides {
@@ -469,9 +467,9 @@ input[type='radio'].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .slide-content-img img {
@@ -558,7 +556,7 @@ input[type='radio'].visually-hidden {
 .slider-top .slides-switches {
   position: absolute;
   right: 82px;
-  bottom: 240px;
+  bottom: 250px;
 }
 
 .slides-switches li {
@@ -575,12 +573,14 @@ input[type='radio'].visually-hidden {
   font-size: 0;
   position: relative;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  padding: 0;
   cursor: pointer;
   vertical-align: baseline;
   border: 1px solid #000;
   border-radius: 50%;
+  background-color: transparent;
 }
 
 .slider-top .slide-btn-active::before {
@@ -602,7 +602,8 @@ input[type='radio'].visually-hidden {
 }
 
 .catalog {
-  margin-bottom: 181px;
+  margin-top: -6px;
+  margin-bottom: 131px;
 }
 
 .catalog .catalog-list {
@@ -649,6 +650,10 @@ input[type='radio'].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.catalog-list .catalog-item {
+  padding-bottom: 50px;
 }
 
 .catalog-item:hover .catalog-img,
@@ -782,7 +787,8 @@ input[type='radio'].visually-hidden {
 .warranty {
   right: 50px;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position-x: right;
+  background-position-y: 30px;
 }
 
 .delivery {
@@ -952,7 +958,7 @@ input[type='radio'].visually-hidden {
 .main-footer {
   margin-top: 82px;
   padding-top: 63px;
-  padding-bottom: 80px;
+  padding-bottom: 58px;
   color: #fff;
   background-color: #464646;
 }
@@ -1026,7 +1032,7 @@ input[type='radio'].visually-hidden {
   justify-content: flex-end;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .main-footer-bottom::before {
@@ -1040,6 +1046,7 @@ input[type='radio'].visually-hidden {
 }
 
 .main-footer-bottom ul {
+  width: 160px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1082,8 +1089,8 @@ input[type='radio'].visually-hidden {
 }
 
 /* ===============================
-  ======== МОДАЛЬНЫЕ ОКНА ==========
-  =============================== */
+    ======== МОДАЛЬНЫЕ ОКНА ==========
+    =============================== */
 
 .modal {
   position: fixed;
@@ -1095,57 +1102,10 @@ input[type='radio'].visually-hidden {
   box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
 }
 
-.modal-close {
-  display: block;
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  width: 55px;
-  height: 55px;
-  cursor: pointer;
-  opacity: .5;
-  border: 0;
-  border-radius: 50%;
-  background-color: #f0c52e;
-  font-size: 0;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  opacity: 1;
-}
-
-.modal-close:active {
-  opacity: .3;
-}
-
-.modal-close::before,
-.modal-close::after {
-  position: absolute;
-  top: 26px;
-  left: 13px;
-  width: 30px;
-  height: 3px;
-  content: '';
-  background-color: #fff;
-}
-
-.modal-close::before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
 .modal-map {
-  display: none;
   top: 120px;
   left: 50%;
+  display: none;
   width: 960px;
   height: 559px;
   margin-left: -480px;
@@ -1156,9 +1116,9 @@ input[type='radio'].visually-hidden {
 }
 
 .modal-wtite-us {
-  display: none;
   top: 120px;
   left: 50%;
+  display: none;
   width: 960px;
   margin-left: -480px;
   padding: 95px 100px;
@@ -1247,9 +1207,56 @@ input[type='radio'].visually-hidden {
   background-color: #f6dada;
 }
 
+.modal-close {
+  font-size: 0;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  opacity: .5;
+  border: 0;
+  border-radius: 50%;
+  background-color: #f0c52e;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: .3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  position: absolute;
+  top: 26px;
+  left: 13px;
+  width: 30px;
+  height: 3px;
+  content: '';
+  background-color: #fff;
+}
+
+.modal-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 /* ================================
-    ======== СТРАНИЦА КАТАЛОГА ========
-    ================================ */
+      ======== СТРАНИЦА КАТАЛОГА ========
+      ================================ */
 
 .main-header-inner {
   min-height: 186px;
@@ -1525,6 +1532,11 @@ input[type='radio'].visually-hidden {
   content: '';
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:focus+label,
+.filter-input-radio:focus+label {
+  outline: 2px solid #61c3ff;
 }
 
 .filter-input-checkbox:checked+label::before {

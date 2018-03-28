@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -88,7 +88,7 @@
       <section class="slider-top">
         <h2 class="visually-hidden">Лучшие товары</h2>
         <ol class="slides">
-          <li class="slide-content slide-visible">
+          <li class="slide-content slide-visible" id="slide-first">
             <div class="slide-content-img">
               <img src="img/slider-1.png" alt="Самая длинная палка для сэлфи" width="384" height="486">
             </div>
@@ -113,7 +113,7 @@
               </table>
             </div>
           </li>
-          <li class="slide-content slide-hidden">
+          <li class="slide-content slide-hidden" id="slide-second">
             <div class="slide-content-img">
               <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
             </div>
@@ -133,7 +133,7 @@
               </table>
             </div>
           </li>
-          <li class="slide-content slide-hidden">
+          <li class="slide-content slide-hidden" id="slide-third">
             <div class="slide-content-img">
               <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             </div>
@@ -158,13 +158,13 @@
         </ol>
         <ul class="slides-switches">
           <li class="slide-radio">
-            <label class="slide-btn slide-btn-active" for="slide-first">Слайд селфипалок</label>
+            <button class="slide-btn slide-btn-active" for="slide-first">Слайд селфипалок</button>
           </li>
           <li class="slide-radio">
-            <label class="slide-btn" for="slide-second">Слайд фитнес-браслетов</label>
+            <button class="slide-btn" for="slide-second">Слайд фитнес-браслетов</button>
           </li>
           <li class="slide-radio">
-            <label class="slide-btn" for="slide-third">Слайд квадрокоптеров</label>
+            <button class="slide-btn" for="slide-third">Слайд квадрокоптеров</button>
           </li>
         </ul>
       </section>
@@ -185,7 +185,8 @@
               <div class="catalog-img img-monopod">
                 <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
               </div>
-              <h3>Моноподы <br>для селфи</h3>
+              <h3>Моноподы
+                <br>для селфи</h3>
             </a>
           </li>
           <li class="catalog-item">
