@@ -1459,8 +1459,16 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.selected-price span:hover::before {
+.selected-price span:first-child:hover::before {
   background-size: 22px 24px;
+  top: -25px;
+  left: -6px;
+}
+
+.selected-price span:last-child:hover::before {
+  background-size: 22px 24px;
+  top: -25px;
+  right: 19px;
 }
 
 .filter .filter-price {
@@ -1572,8 +1580,8 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.filter-color .disabled::before,
-.filter-bluetooth .disabled::before {
+.filter-input-checkbox[type="checkbox"]:disabled+label::before,
+.filter-input-radio[type="radio"]:disabled+label::before {
   opacity: .25;
 }
 
