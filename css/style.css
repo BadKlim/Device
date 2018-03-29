@@ -1542,6 +1542,11 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.filter-input-checkbox:hover+label,
+.filter-input-radio:hover+label {
+  opacity: .6;
+}
+
 .filter-input-checkbox:focus+label,
 .filter-input-radio:focus+label {
   outline: 2px solid #61c3ff;
