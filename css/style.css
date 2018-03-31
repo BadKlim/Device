@@ -458,6 +458,59 @@ input[type='radio'].visually-hidden {
   display: none;
 }
 
+@-webkit-keyframes enter {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: .5;
+  }
+  75% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: .75;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes enter {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: .5;
+  }
+  75% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: .75;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-visible {
+  -webkit-animation-name: enter;
+  animation-name: enter;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+}
+
 .slide-content .slide-content-img,
 .slide-content .slide-description {
   width: 560px;
@@ -683,6 +736,49 @@ input[type='radio'].visually-hidden {
   border: 0;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
+}
+
+@-webkit-keyframes switch {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes switch {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.services-slide-visible {
+  -webkit-animation-name: switch;
+  animation-name: switch;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
 }
 
 .services-wrapper {
@@ -1089,8 +1185,8 @@ input[type='radio'].visually-hidden {
 }
 
 /* ===============================
-    ======== МОДАЛЬНЫЕ ОКНА ==========
-    =============================== */
+      ======== МОДАЛЬНЫЕ ОКНА ==========
+      =============================== */
 
 .modal {
   position: fixed;
@@ -1254,9 +1350,116 @@ input[type='radio'].visually-hidden {
   transform: rotate(-45deg);
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: .5;
+  }
+  75% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: .75;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: .5;
+  }
+  75% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: .75;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+
+.modal-error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+}
+
 /* ================================
-      ======== СТРАНИЦА КАТАЛОГА ========
-      ================================ */
+        ======== СТРАНИЦА КАТАЛОГА ========
+        ================================ */
 
 .main-header-inner {
   min-height: 186px;
@@ -1460,15 +1663,15 @@ input[type='radio'].visually-hidden {
 }
 
 .selected-price span:first-child:hover::before {
-  background-size: 22px 24px;
   top: -25px;
   left: -6px;
+  background-size: 22px 24px;
 }
 
 .selected-price span:last-child:hover::before {
-  background-size: 22px 24px;
   top: -25px;
   right: 19px;
+  background-size: 22px 24px;
 }
 
 .filter .filter-price {
@@ -1585,8 +1788,8 @@ input[type='radio'].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox[type="checkbox"]:disabled+label::before,
-.filter-input-radio[type="radio"]:disabled+label::before {
+.filter-input-checkbox[type='checkbox']:disabled+label::before,
+.filter-input-radio[type='radio']:disabled+label::before {
   opacity: .25;
 }
 

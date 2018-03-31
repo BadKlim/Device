@@ -158,13 +158,13 @@
         </ol>
         <ul class="slides-switches">
           <li class="slide-radio">
-            <button class="slide-btn slide-btn-active" for="slide-first">Слайд селфипалок</button>
+            <button class="slide-btn slide-btn-active" data-for="slide-first">Слайд селфипалок</button>
           </li>
           <li class="slide-radio">
-            <button class="slide-btn" for="slide-second">Слайд фитнес-браслетов</button>
+            <button class="slide-btn" data-for="slide-second">Слайд фитнес-браслетов</button>
           </li>
           <li class="slide-radio">
-            <button class="slide-btn" for="slide-third">Слайд квадрокоптеров</button>
+            <button class="slide-btn" data-for="slide-third">Слайд квадрокоптеров</button>
           </li>
         </ul>
       </section>
@@ -231,13 +231,13 @@
           <h2 class="visually-hidden">Сервисы</h2>
           <ul class="services-switches">
             <li class="services-switches-active">
-              <button class="btn-services btn-services-active">Доставка</button>
+              <button class="btn-services btn-services-active" data-for="delivery">Доставка</button>
             </li>
             <li>
-              <button class="btn btn-services">Гарантия</button>
+              <button class="btn btn-services" data-for="warranty">Гарантия</button>
             </li>
             <li>
-              <button class="btn btn-services">Кредит</button>
+              <button class="btn btn-services" data-for="credit">Кредит</button>
             </li>
           </ul>
           <ul class="services-slides">
@@ -304,11 +304,11 @@
         <h2>Контакты</h2>
         <p class="description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map">
-          <a href="#">
+          <a href="#" class="map-link">
             <img src="img/map.jpg" alt="Карта" width="560" height="222">
           </a>
         </div>
-        <a class="btn" href="#">Напишите нам</a>
+        <a class="btn contacts-link" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -401,9 +401,9 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p>
-      <img src="img/map-full.jpg" width="960" height="559" alt="Офис компании по адресу улица Строителей, 15">
-    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2279.013734552847!2d61.4064425161242!3d55.1655358445975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5ed4917c77335%3A0x2ff7079e553d5216!2z0YPQuy4g0J_Rg9GI0LrQuNC90LAsIDE2LCDQp9C10LvRj9Cx0LjQvdGB0LosINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC7LiwgNDU0MDkx!5e0!3m2!1sru!2sru!4v1522426135688" 
+      width="960" height="559" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
@@ -425,7 +425,7 @@
   </section>
 
   <script src="js/scripts.js"></script>
-
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
