@@ -1211,6 +1211,12 @@ input[type='radio'].visually-hidden {
   margin: 0;
 }
 
+.modal-map iframe {
+  width: 960px;
+  height: 559px;
+  border: 0;
+}
+
 .modal-wtite-us {
   top: 120px;
   left: 50%;
