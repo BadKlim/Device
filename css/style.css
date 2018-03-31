@@ -1232,6 +1232,7 @@ input[type='radio'].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .modal-wtite-us .name,
